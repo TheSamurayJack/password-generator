@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+body {
+    background: #11998e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    margin: 0;
+}
+
+
+header {
+    background-color: #373b44;
+    border-radius: 10px;
+    margin: 5px 5px;
+}
+
+header .logo {
+    margin: 0;
+    padding: 5px 20px;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 1.4em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: none;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#app .container{
+    background-color: #373b44;
+    margin: 5px;
+    border-radius: 10px;
+    color: whitesmoke;
+    padding: 10px 20px;
+}
+
+#app h3{
+    margin: 10px 10px;
+}
+
+#app .generador{
+    background: #11998e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    font-weight: bold;
+}
+
+#app input{
+    margin: 15px 10px;
+}
+
+#output{
+    margin: 15px 5px;
+    background-color:#373b44;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+button{
+    margin: 0px 100px;
+    padding: 7px;
+    font-size: large;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #0d311b;
+    border-style: unset;
+    border-radius: 7px;
+}
+
+button:hover{
+    background-color: #277946;
+}
+
+button:active{
+    background-color: #0d311b;
+}
+
+#acerca-de{
+    margin-top: 150px;
+}
+
+#acerca-de .container{
+    text-align: center;
+    padding: 5px 12px;
+    background-color: #373b44;
+    color: whitesmoke;
+    border-radius: 20px;
+    margin: 20px 10px;
+}
+
+#acerca-de .img-container{
+    background-image: url("media/zetx.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    width: 200px; 
+    margin: auto;
+}
+
+footer{
+    background-color: #2223259f;
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 850px) {
+
+    header{
+        margin: 5px 10px;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 10px;
+    }
+    header a{
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: whitesmoke;
+    }
+    #acerca-de .img-container{
+        background-image: url("media/zetx.jpg");
+        background-size: cover;
+        background-position: center center center;
+        height: 450px;
+        width: 500px; 
+        margin:auto;
+    }
+
+    #acerca-de .container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 15px 12px;
+        margin: 20px 10px;
+    }
+    #acerca-de .text-container{
+        width: 50%;
+        text-align: initial;
+        padding: 7px 20px;
+        text-align: center;
+    }
+}

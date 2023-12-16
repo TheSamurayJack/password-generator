@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Paswword Generator</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Zet-X</p>
+            <nav>
+                <ul>
+                    <a href="#app">Generador</a>
+                    <a href="#acerca-de">Acerca de</a>
+                    <a href="">Otro</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="app">
+        <div class="container">
+            <h3>Generador de Contraseñas</h3>
+            <div class="generador">
+                <label for="maxLength">
+                    Tamaño de la Contraseña
+                </label>
+                <input type="range" name="range" id="maxLength" max="16" min="8" value="8">
+                <span id="spanLength">8</span>
+                <div class="cOption">
+                    <input type="checkbox" name="numbers" id="usenumbers">
+                    <label for="usenumbers">Usar Numeros</label>
+                </div>
+                <div class="cOption">    
+                    <input type="checkbox" name="symbols" id="usesymbols">
+                    <label for="usesymbols">Usar Simbolos</label>
+                </div>
+
+                <button id="btnGenerar">Generar</button>
+
+                <span id="output">-----------</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="acerca-de">
+        <div class="container">
+            <div class="text-container">
+                <h3>Sobre este Proyecto</h3>
+                <p>Mi nombre es <strong>Jair Zhindón</strong>, y soy estudiante del colegio <strong>"Provincia del
+                        Cañar"</strong>. Este sitio es una prueba de las grandes cosas que, con dedicacion puedo lograr.
+                    Aunque para mi, esto es muy sencillo en comparacion con las cosas que tengo en mente.</p>
+                <p>Este sitio web ha sido creado principalemente como una practica educativa para mi. Detras de esto hay
+                    tiempo de dedicacion al aprendizaje. Y aunque esto es bastante sencillo en comparacion con otros
+                    proyectos, forman parte de los pilares de un futuro, un futuro al que me gusta llamar
+                    <strong>"ZetX"</strong>
+                </p>
+            </div>
+            <div class="img-container">
+            </div>
+        </div>
+    </section>
+
+    <footer>Creado Por Jair Zhindón - Programador</footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
