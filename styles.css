@@ -105,12 +105,13 @@ header nav{
     margin: 15px 10px;
 }
 
-#output{
+.out{
     margin: 15px 5px;
     background-color:#373b44;
     padding: 10px 5px;
     border-radius: 10px;
 }
+
 
 button{
     margin: 0px 100px;

@@ -19,6 +19,13 @@ const generatePassword = (base, length)=>{
     }
 
     output.innerHTML = password
+
+    copy.addEventListener('click', ()=>{
+        navigator.clipboard.writeText(password)
+            .then(()=>{
+                window.alert("Contraseña Copiada al Portapapeles")
+            })
+    })
 }
 
 const generar = () => {
@@ -35,4 +42,6 @@ const generar = () => {
     if (usesymbols.checked) base+=symbols
     
     generatePassword(base, length)
+
+    
 }
